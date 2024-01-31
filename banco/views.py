@@ -4,7 +4,6 @@ from json import JSONEncoder
 from datetime import datetime
 import random
 import string
-
 from django.core import serializers
 from django.conf import settings
 from django.shortcuts import render, get_object_or_404
@@ -17,7 +16,6 @@ from django.utils.crypto import get_random_string
 from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.hashers import make_password, check_password
 from django.views.decorators.http import require_POST
-
 from .models import User, Token, Expense, Income , News
 
 # Create your views here.
