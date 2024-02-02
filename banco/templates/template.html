@@ -1,4 +1,4 @@
-{% load staticfiles %}
+{% load static %}
 <!DOCTYPE html>
 <html  class="no-js" lang="fa" dir="rtl">
   <head>
@@ -50,11 +50,7 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav navbar-left">
                     {% if user.is_authenticated %}
-                    <!--<li><a href="/static/todoer_release.apk">اپ اندروید</a></li>-->
-                    <li><a href="{% url 'logout' %}">خروج</a></li>
-                    {% else %}
-                    <li><a href="{% url 'register' %}">ثبت نام</a></li>
-                    <!--<li><a href="/static/todoer_release.apk">اپ اندروید</a></li>-->
+                    <li><a href="{% url 'logout_view' %}">خروج</a></li>
                     {% endif %}
                   </ul>
                 </div>
@@ -78,7 +74,7 @@
             <div class="">
 
               <p>
-                <strong></strong>.<br>
+                <strong>Created by Hoossein Boostanchi</strong><br>
               </p>
             </div>
           </div>

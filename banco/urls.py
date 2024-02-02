@@ -11,6 +11,7 @@ urlpatterns = [
     path(r'q/expenses/', views.query_expenses, name='query_expenses'),
     path(r'accounts/whoami/', views.whoami, name='whoami'),
     path(r'accounts/login/', views.login, name='login'),
+    path(r'accounts_logout/' , views.logout_view , name = 'logout_view'),
     path(r'news/', views.news, name='news'),
     path(r'', views.index, name='index'),
 ]
