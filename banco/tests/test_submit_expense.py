@@ -14,7 +14,7 @@ class TestExpense(TestCase):
         self.client = Client()
         self.user = User.objects.create_user(
             username='test',
-            email='test@bestoon.ir',
+            email='test@Yobanco.ir',
             password='top_secret'
         )
         self.token = Token.objects.create(
