@@ -6,7 +6,7 @@ import random
 import string
 from django.core import serializers
 from django.conf import settings
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import redirect, render, get_object_or_404
 from django.contrib.auth.hashers import make_password
 from django.contrib.auth.models import User
 from django.contrib.auth import logout
